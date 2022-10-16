@@ -1,5 +1,5 @@
 FROM node:16-alpine
-RUN apk --update add chromium-chromedriver
+RUN apk --update add chromium-chromedriver jq
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 RUN mkdir -p /app
 ADD . /app
