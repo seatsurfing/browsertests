@@ -40,7 +40,7 @@ describe('Confluence Cloud App', function() {
 
         let brand = await driver.wait(until.elementLocated(By.css('a.navbar-brand')), 15000);
         let brandHref = await brand.getAttribute('href');
-        assert.startsWith('https://app.seatsurfing.app/ui/search', brandHref);
+        assert.ok(brandHref.startsWith('https://app.seatsurfing.app/ui/search'));
     });
 
 });
