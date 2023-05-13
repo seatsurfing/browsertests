@@ -9,8 +9,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "mocha": "^10.0.0",
+    "mocha": "^10.2.0",
     "mochawesome": "^7.1.3",
-    "selenium-webdriver": "^4.5.0"
+    "selenium-webdriver": "^4.9.2"
   }
 }
