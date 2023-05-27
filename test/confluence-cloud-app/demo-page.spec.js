@@ -38,9 +38,9 @@ describe('Confluence Cloud App', function() {
         
         await driver.switchTo().frame(actualIframe);
 
-        let brand = await driver.wait(until.elementLocated(By.css('a.navbar-brand')), 15000);
-        let brandHref = await brand.getAttribute('href');
-        assert.ok(brandHref.startsWith('https://app.seatsurfing.app/ui/search'));
+        let link = await driver.wait(until.elementLocated(By.css('.navbar-nav > a:first-of-type')), 15000);
+        let linkHref = await link.getAttribute('href');
+        assert.equal(linkHref, 'https://app.seatsurfing.app/ui/en/search');
     });
 
 });
